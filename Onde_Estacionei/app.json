@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Onde Estacionei?",
+    "slug": "onde-estacionei",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "ondeestacionei",
+    "android": {
+      "package": "com.projeto.estacionamentointeligente",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": ""
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "O aplicativo usa sua localização para salvar onde você estacionou."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#D6AA45"
+        }
+      ],
+      [
+        "expo-sensors"
+      ],
+      "react-native-android-widget"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}
